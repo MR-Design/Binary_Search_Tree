@@ -45,10 +45,13 @@ namespace _Binary_Search_Tree
                         Node newNode = new Node(data);
                         currentNode.left = newNode;
                         added =true;
+
+                        Console.WriteLine("This Input "+newNode+"is a Parent");
                     }
                     else
                     {
                         currentNode = currentNode.left;
+                        Console.WriteLine("This Input " + currentNode + "is a Child To the right");
                     }
                 }
 
@@ -61,10 +64,12 @@ namespace _Binary_Search_Tree
                         Node newNode = new Node(data);
                         currentNode.right = newNode;
                         added = true;
+                        Console.WriteLine("This Input " + newNode + "is a Parent");
                     }
                     else
                     {
                         currentNode = currentNode.right;
+                        Console.WriteLine("This Input " + currentNode + "is a Child To the Right");
                     }
                 }
 
@@ -73,7 +78,7 @@ namespace _Binary_Search_Tree
         }
         public void search() // Search Methode
         {
-
+           
         }
     }   
 }
