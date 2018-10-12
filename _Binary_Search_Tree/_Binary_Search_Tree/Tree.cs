@@ -76,9 +76,18 @@ namespace _Binary_Search_Tree
             }
             while (!added);
         }
-        public void search() // Search Methode
+        public void search(int data) // Search Methode
         {
-           
+            Console.WriteLine("Insert a Number");
+            data = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Here's your Value...", data);
+            add(data);
+
+
         }
+
+
+
+
     }   
 }
